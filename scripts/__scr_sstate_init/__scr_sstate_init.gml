@@ -1,0 +1,1 @@
+show_debug_message("SSave v{0} - https://github.com/stoozey/SState - by @stoozey_", __SSTATE_VERSION );

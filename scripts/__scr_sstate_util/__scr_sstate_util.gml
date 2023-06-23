@@ -11,4 +11,4 @@ function __sstate_print()
     return show_debug_message(_string);
 }
 
-function __state_func_empty() { }
+function __sstate_func_empty() { }

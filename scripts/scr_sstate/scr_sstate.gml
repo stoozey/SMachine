@@ -1,6 +1,6 @@
 function SState() constructor
 {
-	static add = function(_id, _initializer = __state_func_empty)
+	static add = function(_id, _initializer = __sstate_func_empty)
 	{
 		var _state = new __sstate_class_state(_id, __owner);
 		__states[$ _id] = _state;

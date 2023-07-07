@@ -49,7 +49,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "SState",
-    "path": "SState.yyp",
+    "name": "SMachine",
+    "path": "SMachine.yyp",
   },
 }

@@ -1,6 +1,6 @@
-function __sstate_print()
+function __smachine_print()
 {
-	var _string = "########## SState: ";
+	var _string = "########## SMachine: ";
     var _i = 0;
     repeat(argument_count)
     {
@@ -8,7 +8,7 @@ function __sstate_print()
         ++_i;
     }
     
-    return show_debug_message(_string);
+    show_debug_message(_string);
 }
 
-function __sstate_func_empty() { }
+function __smachine_func_empty() { }

@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "SState",
-    "path": "SState.yyp",
+    "name": "SMachine",
+    "path": "SMachine.yyp",
   },
 }

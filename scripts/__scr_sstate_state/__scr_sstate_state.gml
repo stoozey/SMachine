@@ -1,4 +1,4 @@
-function __sstate_class_state(_id, _owner) constructor
+function __smachine_class_state(_id, _owner) constructor
 {
 	static add_event = function(_eventType, _eventNumber, _function)
 	{
@@ -12,8 +12,8 @@ function __sstate_class_state(_id, _owner) constructor
 		var _eventName = __get_event_name(event_type, event_number);
 		if (!variable_struct_exists(__events, _eventName))
 		{
-			if (SSTATE_SHOW_MISSING_EVENT_WARNING)
-				__sstate_print("state ", __id, " doesn't contain an event for \"", _eventName, "\"!");
+			if (SMACHINE_SHOW_MISSING_EVENT_WARNING)
+				__smachine_print("state ", __id, " doesn't contain an event for \"", _eventName, "\"!");
 			
 			return;
 		}
@@ -43,8 +43,8 @@ function __sstate_class_state(_id, _owner) constructor
 	{
 		if (!variable_struct_exists(__properties, _propertyName))
 		{
-			if (SSTATE_SHOW_MISSING_PROPERTY_WARNING)
-				__sstate_print("state ", __id, " doesn't contain a property called \"", _propertyName, "\"!");
+			if (SMACHINE_SHOW_MISSING_PROPERTY_WARNING)
+				__smachine_print("state ", __id, " doesn't contain a property called \"", _propertyName, "\"!");
 			
 			return _defaultValue;
 		}
@@ -70,8 +70,8 @@ function __sstate_class_state(_id, _owner) constructor
 	__id = _id;
 	__owner = _owner;
 	
-	__onEnter = __sstate_func_empty;
-	__onExit = __sstate_func_empty;
+	__onEnter = __smachine_func_empty;
+	__onExit = __smachine_func_empty;
 	
 	__events = { };
 	__properties = { };

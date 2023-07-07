@@ -1,1 +1,1 @@
-#macro __SSTATE_VERSION "0.1.0"
+#macro __SMACHINE_VERSION "0.1.0"

@@ -1,8 +1,8 @@
-function SState() constructor
+function SMachine() constructor
 {
-	static add = function(_id, _initializer = __sstate_func_empty)
+	static add = function(_id, _initializer = __smachine_func_empty)
 	{
-		var _state = new __sstate_class_state(_id, __owner);
+		var _state = new __smachine_class_state(_id, __owner);
 		__states[$ _id] = _state;
 		
 		_initializer(_state);
@@ -11,6 +11,13 @@ function SState() constructor
 	
 	static set_state = function(_id)
 	{
+		var _lastState = __state;
+		if (_lastState != -1)
+		{
+			_lastState.__exit();
+			
+		}
+		
 		__state = __states[$ _id];
 		return self;
 	}

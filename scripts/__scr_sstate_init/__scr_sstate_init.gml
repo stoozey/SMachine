@@ -1,1 +1,1 @@
-show_debug_message("SSave v{0} - https://github.com/stoozey/SState - by @stoozey_", __SSTATE_VERSION );
+show_debug_message("SMachine v{0} - https://github.com/stoozey/SMachine - by @stoozey_", __SMACHINE_VERSION );
